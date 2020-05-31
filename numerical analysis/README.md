@@ -9,3 +9,5 @@
 分段线性插值
 ### best_uniform_approximation
 求最佳一致逼近多项式
+### least_square_method
+最小二乘法
