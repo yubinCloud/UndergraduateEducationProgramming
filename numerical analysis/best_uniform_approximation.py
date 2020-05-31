@@ -5,7 +5,6 @@
 import math
 import sympy as sp
 from sympy.abc import t, x
-from scipy.interpolate import lagrange
 
 def Chebyshev_zeropoints(n):
     """
