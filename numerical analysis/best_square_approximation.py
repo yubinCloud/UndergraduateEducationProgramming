@@ -29,7 +29,10 @@ def best_square_approximation(f, domain, num_base_funcs, weight_func=x ** 0):
     sp.pprint(H)
     print('D:')
     sp.pprint(D)
-    return sp.solve(H * X - D)
+    A = sp.solve(H * X - D)
+    print("A:")
+    sp.pprint(A)
+    return A
 
 
 def inner_product_func(func1, func2, domain, weight_func):
