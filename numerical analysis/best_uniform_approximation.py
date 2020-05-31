@@ -20,7 +20,7 @@ def Chebyshev_zeropoints(n):
 def best_uniform_approximation(f, domain, index):
     """
     求最佳一致逼近多项式
-    :param f: 原函数的表达式
+    :param f: 关于x的原函数表达式，x为 sympy.abc.x
     :param domain: 定义域，利用tuple表示
     :param index: 要构造的拉格朗日插值多项式的最高次数
     :return: 插值节点(X, Y)
@@ -30,12 +30,12 @@ def best_uniform_approximation(f, domain, index):
     a, b = domain
     transform = (b + a) / 2 + (b - a) / 2 * t
     X = [transform.xreplace({t: num}) for num in zero_points]
-    zero_points = None
     # 计算Y
     Y = [f.xreplace({x: x_num}) for x_num in X]
     print('X:', X)
     print('Y:', Y)
     return X, Y
+
 
 if __name__ == '__main__':
     f = sp.exp(x)
