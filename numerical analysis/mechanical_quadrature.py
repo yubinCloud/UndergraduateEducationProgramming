@@ -15,7 +15,7 @@ def trapezoid(f, x, interval):
     :return: 近似的积分值
     """
     a, b = interval
-    return sp.Rational(1 / 2) * (b - a) * (f.xreplace({x: a}) + f.xreplace({x: b}))
+    return sp.Rational(1 / 2) * (b - a) * (f.limit(x, a) + f.limit((x, b)))
 
 
 def mid_rectangle(f, x, interval):
@@ -27,7 +27,7 @@ def mid_rectangle(f, x, interval):
     :return: 近似的积分值
     """
     a, b = interval
-    return (b - a) * f.xreplace({x: sp.Rational((a + b) / 2)})
+    return (b - a) * f.limit(x, sp.Rational((a + b) / 2))
 
 
 def simpson(f, x, interval):
@@ -40,7 +40,7 @@ def simpson(f, x, interval):
     """
     a, b = interval
     return sp.Rational(1 / 6) * (b - a) * \
-           (f.xreplace({x: a}) + 4 * f.xreplace({x: sp.Rational((a + b) / 2)}) + f.xreplace({x: b}))
+           (f.limit(x, a) + 4 * f.limit(x, sp.Rational((a + b) / 2)) + f.limit(x, b))
 
 
 if __name__ == '__main__':

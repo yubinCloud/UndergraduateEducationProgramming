@@ -37,7 +37,7 @@ def newton_cotes(f, x, interval, n):
     X = [bottom + step * k for k in range(n + 1)]  # 等距节点
     res = 0
     for k in range(n + 1):
-        res += cotes_coef_tb[n - 1][k] * f.xreplace({x: X[k]})
+        res += cotes_coef_tb[n - 1][k] * f.limit(x, X[k])
     res *= top - bottom
     return res
 

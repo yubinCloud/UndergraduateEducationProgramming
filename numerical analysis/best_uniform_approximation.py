@@ -28,9 +28,9 @@ def best_uniform_approximation(f, domain, index):
     # 根据domain将零点转化为f的插值节点
     a, b = domain
     transform = (b + a) / 2 + (b - a) / 2 * t
-    X = [transform.xreplace({t: num}) for num in zero_points]
+    X = [transform.limit(t, num) for num in zero_points]
     # 计算Y
-    Y = [f.xreplace({x: x_num}) for x_num in X]
+    Y = [f.limit(x, x_num) for x_num in X]
     print('X:', X)
     print('Y:', Y)
     return X, Y
