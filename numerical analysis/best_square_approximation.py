@@ -9,6 +9,7 @@ import sympy as sp
 def best_square_approximation(f, domain, num_base_funcs, weight_func=fo.x_0):
     """
     最佳平方逼近
+    默认基函数为{1, x, x_2, ...}
     :param f: 原函数
     :param domain: f的定义域
     :param num_base_funcs: 基函数个数
@@ -41,3 +42,8 @@ def inner_product_func(func1, func2, domain, weight_func):
     x, y = sp.symbols('x y')
     func = lambda k: func1(k) * func2(k) * weight_func(k)
     return sp.integrate(func(x), (x, *domain))
+
+
+if __name__ == '__main__':
+    a = best_square_approximation(fo.x_n(0.5), (0.25, 1), 2)
+    print(a)
