@@ -11,3 +11,7 @@
 求最佳一致逼近多项式
 ### least_square_method
 最小二乘法
+### mechanical_quadrature
+机械求积（梯形公式、中矩形公式、辛普生公式）
+### newton_cotes
+牛顿-柯特思公式
