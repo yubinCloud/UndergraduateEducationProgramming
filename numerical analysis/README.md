@@ -4,6 +4,8 @@
 ### newton_interpolate
 牛顿插值算法
 ### best_square_approximation
-最佳平方逼近算法
+求最佳平方逼近多项式
 ### piecewise_linear_interpolate
 分段线性插值
+### best_uniform_approximation
+求最佳一致逼近多项式
