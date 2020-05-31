@@ -31,7 +31,7 @@ def least_square(X, Y, index):
             for k in range(n):
                 res += X[k] ** (i + j)
             H[i, j] = res
-    # 计算正规方程组解除待定系数
+    # 计算正规方程组的待定系数
     A = sp.solve(H * A - D)
     print("H:")
     sp.pprint(H)
