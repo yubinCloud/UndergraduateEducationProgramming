@@ -2,7 +2,6 @@
 最佳平方逼近
 
 """
-import func_obj as fo
 import sympy as sp
 from sympy.abc import x
 
