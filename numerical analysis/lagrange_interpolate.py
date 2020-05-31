@@ -11,7 +11,7 @@ def lag_inter(X, Y):
     根据给定的一系列x, y值来进行拉格朗日插值
     :param X: 所有x组成的一维向量
     :param Y: 所有y组成的一维向量
-    :return:
+    :return: 插值多项式
     """
     res_poly = lagrange(X, Y)
     print(res_poly)
