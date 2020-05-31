@@ -47,5 +47,6 @@ def inner_product_func(func1, func2, domain, weight_func):
 
 
 if __name__ == '__main__':
-    a = best_square_approximation(sp.sqrt(x), (sp.Rational(1 / 4), 1), 2)
+    f = sp.sqrt(x)
+    a = best_square_approximation(f, (sp.Rational(1 / 4), 1), 2)
     sp.pprint(a)
