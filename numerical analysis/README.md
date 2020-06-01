@@ -17,3 +17,5 @@
 牛顿-柯特思公式
 ### compound_quadrature
 复合求积（复合梯形公式、复合辛普生公式、复合柯特思公式）
+### gauss_elimination
+高斯消去法 和 高斯列主元消去法
