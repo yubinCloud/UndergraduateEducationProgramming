@@ -48,8 +48,8 @@ def gauss_elimination(A, b, need_primecol=False):
 def primecol_strategy(B, cur_row, cur_col):
     """
     列主元策略
-    :param B:
-    :return:
+    :param B: 待处理的矩阵
+    :return:列主元交换后的矩阵
     """
     primecol_row = find_primecol(B, cur_row, cur_col)  # 列主元所在行
     print("交换row{}与row{}".format(cur_row + 1, primecol_row + 1))
