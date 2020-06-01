@@ -13,16 +13,12 @@ def jacobi_iter_matrix(A, b):
     :param b: 值矩阵
     :return: B, f
     """
-    n = len(A)  # 方程组未知量个数
     # 初始化D、L、U:
     D = rational_zeros(A.shape)
     L = rational_zeros(A.shape)
     U = rational_zeros(A.shape)
     # 计算D、L、U:
-    for i in range(n):
-        D[i, i] = A[i, i]
-        L[i, : i] = A[i, : i]
-        U[i, i + 1:] = A[i, i + 1:]
+    D, L, U = split_A(A, D=D, L=L, U=U)
     # 计算B、f
     D_inv = inv(D)
     B = np.dot(D_inv, L + U)
@@ -33,6 +29,52 @@ def jacobi_iter_matrix(A, b):
     print("f:")
     print(f)
     return B, f
+
+
+def gauss_seidel_iter_matrix(A, b):
+    """
+    高斯-塞德尔迭代法的矩阵表示
+    :param A: 系数矩阵
+    :param b: 值矩阵
+    :return: G, d
+    """
+    D, L, U = split_A(A)
+    D_dot_L_inv = np.linalg.inv(D - L)
+    G = np.dot(D_dot_L_inv, U)
+    d = np.dot(D_dot_L_inv, b)
+    print("G:")
+    print(G)
+    print("d:")
+    print(d)
+    return G, d
+
+
+def split_A(A, D=None, L=None, U=None):
+    """
+    将矩阵A分裂为D、L、U
+    :param A: 待分裂的矩阵
+    :param D: 初始化为全0的矩阵
+    :param L: 初始化为全0的矩阵
+    :param U: 初始化为全0的矩阵
+    :return: (D, L, U)
+    """
+    init_zeros(A.shape, D, L, U)
+    for i in range(len(A)):
+        D[i, i] = A[i, i]
+        L[i, : i] = A[i, : i]
+        U[i, i + 1:] = A[i, i + 1:]
+    return D, L, U
+
+
+def init_zeros(shape, *Ms):
+    """
+    对传入的所有矩阵进行检查是否为None，若为None则初始化为shape形状的零矩阵
+    :param shape: 初始化后矩阵的形状
+    :param Ms: 所有矩阵
+    """
+    for M in Ms:
+        if M is None:
+            M = np.zeros(shape)
 
 
 def rational_zeros(shape):

@@ -21,5 +21,7 @@
 高斯消去法 和 高斯列主元消去法
 ### matrix_cond
 求矩阵的条件数
-### jacobi_iter
-雅克比迭代法的矩阵表示
+### iteration
+各种迭代法:
+ + 雅克比迭代法的矩阵表示: jacobi_iter_matrix
+ + 高斯-塞德尔迭代法的矩阵表示：gauss_seidel_iter_matrix
