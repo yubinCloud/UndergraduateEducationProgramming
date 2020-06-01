@@ -25,3 +25,5 @@
 各种迭代法:
  + 雅克比迭代法的矩阵表示: jacobi_iter_matrix
  + 高斯-塞德尔迭代法的矩阵表示：gauss_seidel_iter_matrix
+### eig_and_specradi
+求矩阵的特征值与谱半径
