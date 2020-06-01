@@ -30,12 +30,12 @@ def gauss_elimination(A, b, need_primecol=False):
     num_row, num_col = B.shape  # 增广矩阵的行数、列数
     print("初始：")
     print(B)
-    for cur_row in range(0, num_row - 1):
+    for cur_row in range(0, num_row - 1):  # 逐行进行处理
         print("第{}轮：".format(cur_row + 1))
         # 若需要交换列主元则进行相关处理
         if (need_primecol):
             primecol_strategy(B, cur_row, cur_row)
-
+        # 使用cur_row行来消去下面的行
         for row in range(cur_row + 1, num_row):
             coef = - B[row, cur_row] / B[cur_row, cur_row]
             B[row, :] = B[row] + coef * B[cur_row]
@@ -64,9 +64,9 @@ def find_primecol(M, cur_row, cur_col):
     :param cur_col: 列
     :return: 列主元所在行
     """
-    num_row = M.shape[0]
-    max_value = M[cur_row, cur_col]
-    max_row = cur_row
+    num_row = M.shape[0]  # 总行数
+    max_value = M[cur_row, cur_col]  # 记录列最大元
+    max_row = cur_row  # 列最大元所在的行
     for row in range(cur_row + 1, num_row):
         if M[row, cur_col] > max_value:
             max_value = M[row, cur_col]
