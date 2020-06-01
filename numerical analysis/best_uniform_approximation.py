@@ -6,13 +6,14 @@ import math
 import sympy as sp
 from sympy.abc import t, x
 
+
 def Chebyshev_zeropoints(n):
     """
     求切比雪夫多项式 Tn 在[-1 , 1]上的n个零点
     :param n:
     :return: 有n个零点组成的列表
     """
-    res = [math.cos((2 * k - 1) / (2 * n) * math.pi) for k in range(1, n + 1)]
+    res = [math.cos((2 * k - 1) / (2  * n) * math.pi) for k in range(1, n + 1)]
     return res
 
 
