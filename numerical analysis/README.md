@@ -1,8 +1,6 @@
 # 数值分析相关算法
-### lagrange_interpolate
-拉格朗日插值算法
-### newton_interpolate
-牛顿插值算法
+### interpolate
+拉格朗日插值算法 和 牛顿插值中的计算差商
 ### best_square_approximation
 求最佳平方逼近多项式
 ### piecewise_linear_interpolate
