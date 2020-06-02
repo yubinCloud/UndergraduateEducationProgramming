@@ -2,7 +2,6 @@
 常微分方程（ODE）问题的数值解法
 
 """
-import numpy as np
 import sympy as sp
 from sympy.abc import x, y
 
