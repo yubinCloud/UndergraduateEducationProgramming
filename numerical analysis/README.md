@@ -29,3 +29,7 @@
 求矩阵的特征值与谱半径
 ### find_rooted-interval
 搜索法寻找有根区间
+### nonlinear_equa_iter
+非线性方程的数值解法：
++ 不动点迭代法
++ 牛顿迭代法
