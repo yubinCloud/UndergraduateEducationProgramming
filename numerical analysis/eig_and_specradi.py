@@ -9,12 +9,12 @@ from sympy.abc import lamda
 def eig_and_specradi(A):
     """
     求矩阵M的特征值和谱半径
-    :param A: 待处理的矩阵
+    :param: A: 待处理的矩阵
     :return: (特征值, 谱半径)
     """
     # 计算出 Lambda * I - A
-    A_ = A.tolist()
-    I = np.identity(len(A_))
+    A_ = A.tolist()  # array -> list
+    I = np.identity(len(A_))  # 单位阵
     print("lambda * I - A：")
     print(lamda * I - A_)
     # 计算出特征值和谱半径
