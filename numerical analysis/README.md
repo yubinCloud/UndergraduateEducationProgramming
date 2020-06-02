@@ -29,3 +29,5 @@
  + 高斯-塞德尔迭代法的矩阵表示：gauss_seidel_iter_matrix
 ### eig_and_specradi
 求矩阵的特征值与谱半径
+### find_rooted-interval
+搜索法寻找有根区间
