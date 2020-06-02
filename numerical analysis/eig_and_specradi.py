@@ -16,7 +16,7 @@ def eig_and_specradi(A):
     A_ = A.tolist()
     I = np.identity(len(A_))
     print("lambda * I - A：")
-    print(lamda*I - A_)
+    print(lamda * I - A_)
     # 计算出特征值和谱半径
     eigs, _ = np.linalg.eig(A)
     radius = np.max(eigs)
