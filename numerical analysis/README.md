@@ -5,6 +5,8 @@
 求最佳平方逼近多项式
 ### piecewise_linear_interpolate
 分段线性插值
+### cubic_spline_interpolation
+三次样条插值
 ### best_uniform_approximation
 求最佳一致逼近多项式
 ### least_square_method
