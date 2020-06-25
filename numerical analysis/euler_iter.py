@@ -57,5 +57,5 @@ def iter(g, x0, y0, step, max_k):
 
 
 if __name__ == '__main__':
-    f = y - 2 * x / y
-    euler_improve(f, 0, 1, 0.1, 10)
+    f = -y - x * y
+    euler(f, 0, 1, 0.2, 5)

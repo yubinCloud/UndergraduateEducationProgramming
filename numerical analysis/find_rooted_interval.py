@@ -20,5 +20,5 @@ def find_rooted_interval(f, big_interval, step):
 
 
 if __name__ == '__main__':
-    f = x**3 - 4.2 * x**2 + 4.88 * x - 1.344
-    find_rooted_interval(f, (0, 3), 0.5)
+    f = (x ** 2 + 1) * (x ** 9 - 9 * x + 7)
+    find_rooted_interval(f, (0, 1), 0.2)

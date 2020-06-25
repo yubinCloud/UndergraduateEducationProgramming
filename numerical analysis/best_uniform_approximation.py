@@ -33,10 +33,17 @@ def best_uniform_approximation(f, domain, index):
     # 计算Y
     Y = [f.limit(x, x_num) for x_num in X]
     print('X:', X)
-    print('Y:', Y)
+    print('Y:')
+    for i in Y:
+        print(float(i))
     return X, Y
 
 
 if __name__ == '__main__':
-    f = sp.exp(x)
-    best_uniform_approximation(f, (0, 1), 4)
+     X = Chebyshev_zeropoints(5)
+     for i in X:
+         print(float(i))
+     # f = sp.cos(sp.pi * x / 2)
+     # for i in range(len(X)):
+         # print(float(f.limit(x, X[i])))
+     # best_uniform_approximation(f, (-1, 1), 4)

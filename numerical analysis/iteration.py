@@ -104,11 +104,11 @@ def inv(M):
 
 if __name__ == '__main__':
     A = np.array([
-        [r(8), r(-3), r(2)],
-        [r(4), r(11), r(-1)],
-        [r(6), r(3), r(12)]
+        [8, -1, -1],
+        [1, 8, -1],
+        [1, 1, 8]
     ])
-    b = np.array([r(20), r(33), r(36)]).reshape((-1, 1))
+    b = np.array([6, 8, 10]).reshape((-1, 1))
     jacobi_iter_matrix(A, b)
 
 

@@ -19,7 +19,7 @@ def nonlinear_equa_iter(f, x0, precision=0.0, max_k=100):
     print("第{}次迭代, x{} = {}".format(0, 0, x0))
     for i in range(1, max_k + 1):  # i 为当前迭代的次数
         new_x = f.limit(x, old_x)
-        print("第{}次迭代, x{} = {}".format(i, i, new_x))
+        print("第{}次迭代, x{} = {}".format(i, i, float(new_x)))
         if new_x - old_x <= precision:
             break
         else:
@@ -41,5 +41,5 @@ def newton_iter(f, x0, precision=0.0, max_k=100):
 
 
 if __name__ == '__main__':
-    f = x * sp.exp(x) - 1
-    newton_iter(f, 0.5, 0.0001, 10)
+    f = (x ** 2 + 1) * (x ** 9 - 9 * x + 7)
+    newton_iter(f, 1.5, 0.0, 10)

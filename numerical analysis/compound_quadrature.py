@@ -16,11 +16,16 @@ def compound_trapezoid(f, x, interval, n):
     :return: 近似的积分值
     """
     bottom, top = interval  # 积分上下限
-    step = sp.Rational((top - bottom) / n)  # 步长
+    step = (top - bottom) / n  # 步长
     X = [bottom + step * k for k in range(n + 1)]  # 等距节点
+    print(X)
     # 计算结果
-    res = 2 * sum([f.limit(x, x_num) for x_num in X[1:-1]])
-    res += f.limit(x, bottom) + f.limit(x, top)
+    A = 2 * sum([f.limit(x, x_num) for x_num in X[1:-1]])
+    print(A)
+    res = A
+    B = f.limit(x, bottom) + f.limit(x, top)
+    print(B)
+    res += B
     res *= step / 2
     return res
 
@@ -35,14 +40,22 @@ def compound_simpso(f, x, interval, n):
     :return: 近似的积分值
     """
     bottom, top = interval  # 积分上下限
-    step = sp.Rational((top - bottom) / n)  # 步长
+    step = (top - bottom) / n  # 步长
     X1 = [bottom + step * k for k in range(n + 1)]  # 等距节点
     half_step = step / 2
     X2 = [x_num + half_step for x_num in X1[: -1]]  # 每两个等距节点的中点构成的一维向量
     # 计算结果
     res = 4 * sum([f.limit(x, x_num) for x_num in X2])
-    res += 2 * sum([f.limit(x, x_num) for x_num in X1[1:-1]])
-    res += f.limit(x, bottom) + f.limit(x, top)
+    print("T0:")
+    print(res)
+    T = 2 * sum([f.limit(x, x_num) for x_num in X1])
+    print('T1:')
+    print(T)
+    res += T
+    T = f.limit(x, bottom) + f.limit(x, top)
+    print("T2")
+    print(T)
+    res += T
     res *= step / 6
     return res
 
@@ -57,7 +70,7 @@ def compound_cotes(f, x, interval, n):
     :return: 近似的积分值
     """
     bottom, top = interval
-    step = sp.Rational((top - bottom) / n)  # 步长
+    step = (top - bottom) / n  # 步长
     X1 = [bottom + step * k for k in range(n + 1)]  # 等距节点
     half_step = step / 2  # 半步长
     X2 = [x_num + half_step for x_num in X1[: -1]]  # x下标为 k + 1/2 的所有节点
@@ -75,9 +88,10 @@ def compound_cotes(f, x, interval, n):
 
 if __name__ == '__main__':
     from sympy.abc import x
-    f = sp.sin(x) / x
-    res1 = compound_trapezoid(f, x, (0, 1), 8)
-    res2 = compound_simpso(f, x, (0, 1), 4)
-    print(float(res1))
+    f = x * sp.ln(x ** 2)
+    # res1 = compound_trapezoid(f, x, (-1, 1), 10)
+    res2 = compound_simpso(f, x, (1, 2), 5)
+    # print(f.diff(x).diff(x))
+    print(res2)
 
 

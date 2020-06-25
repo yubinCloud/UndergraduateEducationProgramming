@@ -2,8 +2,11 @@
 插值法
 
 """
+import math
 import numpy as np
 from scipy.interpolate import lagrange
+from sympy import Rational as r
+import sympy as sp
 
 
 def lag_inter(X, Y):
@@ -38,6 +41,6 @@ def cal_diff_quotient(X, Y):
 
 
 if __name__ == '__main__':
-    X = np.array([0, 1, 2])
-    Y = np.array([1, 2, 3])
+    X = np.array([0.9511, 0.5875, 0.0, -0.5878, -0.9511])
+    Y = np.array([0.0768, 0.6032, 1.0, 0.6032, 0.0768])
     lag_inter(X, Y)
