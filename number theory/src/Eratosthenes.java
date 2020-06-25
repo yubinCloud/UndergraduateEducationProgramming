@@ -1,6 +1,5 @@
 /*
- * Eratosthenes筛选法求素数
- * by yubin
+ * Eratosthenes素数筛选法求素数
  */
 
 import java.util.ArrayList;
