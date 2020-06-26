@@ -2,19 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fffa3be0-cf01-4d9a-9a07-f2ead0d48698" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../numerical analysis/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/small-course-codes.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/small-course-codes.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/yubin.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PrimeFactorDecomposition.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Eratosthenes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Eratosthenes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../numerical analysis/best_uniform_approximation.py" beforeDir="false" afterPath="$PROJECT_DIR$/../numerical analysis/best_uniform_approximation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../numerical analysis/compound_quadrature.py" beforeDir="false" afterPath="$PROJECT_DIR$/../numerical analysis/compound_quadrature.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../numerical analysis/euler_iter.py" beforeDir="false" afterPath="$PROJECT_DIR$/../numerical analysis/euler_iter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../numerical analysis/find_rooted_interval.py" beforeDir="false" afterPath="$PROJECT_DIR$/../numerical analysis/find_rooted_interval.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../numerical analysis/interpolate.py" beforeDir="false" afterPath="$PROJECT_DIR$/../numerical analysis/interpolate.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../numerical analysis/iteration.py" beforeDir="false" afterPath="$PROJECT_DIR$/../numerical analysis/iteration.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../numerical analysis/nonlinear_equa_iter.py" beforeDir="false" afterPath="$PROJECT_DIR$/../numerical analysis/nonlinear_equa_iter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/number theory/Eratosthenes.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/number theory/Eratosthenes.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/number theory/ModRepeatSquare.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/number theory/ModRepeatSquare.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,8 +16,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -55,7 +47,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
-  <component name="RunManager" selected="Application.ModRepeatSquare">
+  <component name="RunManager" selected="Application.PrimeFactorDecomposition">
     <configuration name="Eratosthenes" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Eratosthenes" />
       <module name="number theory" />
@@ -70,8 +62,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PrimeFactorDecomposition" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="PrimeFactorDecomposition" />
+      <module name="number theory" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.PrimeFactorDecomposition" />
         <item itemvalue="Application.ModRepeatSquare" />
         <item itemvalue="Application.Eratosthenes" />
       </list>
@@ -104,46 +104,82 @@
       <workItem from="1588778551289" duration="50000" />
       <workItem from="1589271861580" duration="3792000" />
       <workItem from="1589372428579" duration="465000" />
-      <workItem from="1593096434657" duration="560000" />
+      <workItem from="1593096434657" duration="2971000" />
+      <workItem from="1593178187508" duration="2043000" />
     </task>
+    <task id="LOCAL-00001" summary="create README.md">
+      <created>1593097039477</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1593097039477</updated>
+    </task>
+    <task id="LOCAL-00002" summary="create README.md">
+      <created>1593097083405</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1593097083405</updated>
+    </task>
+    <task id="LOCAL-00003" summary="modify comment">
+      <created>1593097107564</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1593097107564</updated>
+    </task>
+    <task id="LOCAL-00004" summary="add interpretation">
+      <created>1593097486763</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1593097486763</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="create README.md" />
+    <MESSAGE value="modify comment" />
+    <MESSAGE value="add interpretation" />
+    <option name="LAST_COMMIT_MESSAGE" value="add interpretation" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="71" key="#Project_Structure" timestamp="1587829318450">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="71" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1587829318450" />
-    <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser" timestamp="1589273562832">
+    <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser" timestamp="1593178746862">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1589273562832" />
-    <state x="358" y="3" key="CommitChangelistDialog2" timestamp="1593097013419">
+    <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1593178746862" />
+    <state x="358" y="3" key="CommitChangelistDialog2" timestamp="1593097485939">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="358" y="3" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1593097013419" />
+    <state x="358" y="3" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1593097485939" />
     <state x="549" y="168" key="FileChooserDialogImpl" timestamp="1589372892884">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1589372892884" />
-    <state width="1493" height="97" key="GridCell.Tab.0.bottom" timestamp="1589276174044">
+    <state width="1493" height="84" key="GridCell.Tab.0.bottom" timestamp="1593180233984">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="97" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1589276174044" />
-    <state width="1493" height="97" key="GridCell.Tab.0.center" timestamp="1589276174044">
+    <state width="1493" height="84" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1593180233984" />
+    <state width="1493" height="84" key="GridCell.Tab.0.center" timestamp="1593180233983">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="97" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1589276174044" />
-    <state width="1493" height="97" key="GridCell.Tab.0.left" timestamp="1589276174044">
+    <state width="1493" height="84" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1593180233983" />
+    <state width="1493" height="84" key="GridCell.Tab.0.left" timestamp="1593180233983">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="97" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1589276174044" />
-    <state width="1493" height="97" key="GridCell.Tab.0.right" timestamp="1589276174044">
+    <state width="1493" height="84" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1593180233983" />
+    <state width="1493" height="84" key="GridCell.Tab.0.right" timestamp="1593180233984">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="97" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1589276174044" />
+    <state width="1493" height="84" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1593180233984" />
     <state width="1493" height="97" key="GridCell.Tab.1.bottom" timestamp="1589276174045">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -160,13 +196,17 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="97" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1589276174045" />
-    <state x="449" y="237" key="com.intellij.ide.util.TipDialog" timestamp="1589372428202">
+    <state x="449" y="237" key="com.intellij.ide.util.TipDialog" timestamp="1593178189258">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="449" y="237" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1589372428202" />
+    <state x="449" y="237" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1593178189258" />
     <state x="562" y="330" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1593097018461">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="562" y="330" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1593097018461" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1593179378124">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1593179378124" />
   </component>
 </project>
