@@ -1,3 +1,0 @@
-/cygdrive/x/course/small-course-codes/InternetProgramming/simple_echo/server/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/cygdrive/x/course/small-course-codes/InternetProgramming/simple_echo/server/cmake-build-debug/CMakeFiles/server.dir
-/cygdrive/x/course/small-course-codes/InternetProgramming/simple_echo/server/cmake-build-debug/CMakeFiles/edit_cache.dir
