@@ -97,7 +97,7 @@ int main(int argc, char* argv[])
     int errcode;  // 用来存放各种函数调用的返回错误码
     // 初始化套接字
     errcode = WSAStartup(MAKEWORD(2, 2), &wsaData);
-    if (errcode == 0) {
+    if (errcode != 0) {
         cout << "WSAStartup failed with error: " << errcode << endl;
     }
     struct addrinfo hints;

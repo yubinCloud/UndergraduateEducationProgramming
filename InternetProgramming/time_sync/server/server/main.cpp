@@ -1,9 +1,10 @@
 #include <cstdio>
-#include <cstdlib>
-#include <winsock2.h>
 #include <ctime>
 #include <cstring>
 #include <iostream>
+
+#define _WINSOCK_DEPRECATED_NO_WARNINGS 1
+#include <winsock2.h>
 
 using namespace std;
 
@@ -16,13 +17,12 @@ constexpr auto SEVER_PORT = 13131;  //时间同步服务器端口号
 int main()
 {
 	char buff[MAX_LINE]; //缓冲区
-    time_t ticks;       //时间
 
     //初始化Windows Sockets DLL,协议版本号
-    const WORD wVersion = MAKEWORD(2, 2);
+    constexpr auto WIN_SOCKETS_DLL_VERSION = MAKEWORD(2, 2);
     WSADATA wsaData;
 
-    int res = WSAStartup(wVersion, &wsaData);
+    int res = WSAStartup(WIN_SOCKETS_DLL_VERSION, &wsaData);
     if (res != 0)
     {
         cout << WSAGetLastError() << "WSAStartup Error!" << endl;
@@ -43,7 +43,7 @@ int main()
     serverAddr.sin_port = htons(SEVER_PORT);        //设置端口
 
     //创建流式套接字
-    SOCKET socketListen = socket(AF_INET, SOCK_STREAM, 0);
+    const SOCKET socketListen = socket(AF_INET, SOCK_STREAM, 0);
     if (socketListen == INVALID_SOCKET)
     {
         cout << WSAGetLastError() << "Socket Error!" << endl;
@@ -55,7 +55,7 @@ int main()
     res = bind(socketListen, reinterpret_cast<struct sockaddr*>(&serverAddr), sizeof(serverAddr));
     if (res == SOCKET_ERROR)
     {
-        cout << WSAGetLastError() << "Bind Addr Error!" << endl;
+        cout << WSAGetLastError() << "Bind address error!" << endl;
         closesocket(socketListen);
         WSACleanup();
         return -1;
@@ -85,11 +85,11 @@ int main()
         }
 
         //获取当前时间
-        ticks = time(nullptr);
-        time(&ticks);
+        auto timestamp = time(nullptr);
+        time(&timestamp);
         memset(buff, 0, sizeof(buff)); //清空缓冲区
         char timeStrBuf[30];
-        ctime_s(timeStrBuf, 30, &ticks);
+        ctime_s(timeStrBuf, 30, &timestamp);
         strcpy_s(buff, timeStrBuf);   // 将数据转换成字符串准备发送
         cout << "Now time is: " << buff << endl;
 
@@ -119,9 +119,4 @@ int main()
         closesocket(socketConn);
         cout << "Server Disconnect" << endl;
     }
-
-    // 关闭连接
-    closesocket(socketListen);
-    WSACleanup();
-    return 0;
 }

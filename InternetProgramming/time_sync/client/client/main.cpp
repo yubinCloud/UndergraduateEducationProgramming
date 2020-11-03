@@ -1,8 +1,9 @@
 #include <cstdio>
+
+#define _WINSOCK_DEPRECATED_NO_WARNINGS 1
 #include <winsock2.h>
 
 #pragma comment(lib, "ws2_32.lib") //引入动态链接库
-#define _WINSOCK_DEPRECATED_NO_WARNINGS 1
 
 
 constexpr auto MAX_LINE = 4096l;             //接收缓冲区长度
@@ -15,9 +16,8 @@ int main()
     char recvData[MAX_LINE + 1];
 
     // 初始化Windows Sockets DLL,协议版本号
-    WORD wVersion = MAKEWORD(2, 2);
     WSADATA wsaData;
-    int res = WSAStartup(wVersion, &wsaData);
+    int res = WSAStartup(MAKEWORD(2, 2), &wsaData);
     if (res != 0)
     {
         printf("%d  WSAStartup Error!\n", WSAGetLastError());

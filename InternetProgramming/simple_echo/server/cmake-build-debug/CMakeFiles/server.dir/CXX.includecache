@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/cygdrive/x/course/small-course-codes/InternetProgramming/simple_echo/server/main.cpp
+windows.h
+-
+winsock2.h
+-
+cstdlib
+-
+cstring
+-
+iostream
+-
+
