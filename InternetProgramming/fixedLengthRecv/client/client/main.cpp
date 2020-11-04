@@ -9,7 +9,7 @@ using std::cout;
 using std::endl;
 using std::string;
 
-constexpr auto FIXED_READ_LENGTH = 10;
+constexpr auto FIXED_READ_LENGTH = 5;
 
 
 int recvn(const SOCKET& socket, char* recvBuf, int fixedLen);
@@ -42,7 +42,7 @@ int main(int argc, char* argv[])
 	// 请求用户输入发送数据
 	string sendStr;  // 需要发送的字符串
 	char revBuf[FIXED_READ_LENGTH + 1] = { 0 };  // 接收缓冲区
-	while (sendStr != "quit") {
+	while (sendStr != "quit ") {
 		cout << "Please enter your data: " << endl;
 		std::getline(std::cin, sendStr);
 
