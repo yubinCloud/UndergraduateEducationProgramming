@@ -10,7 +10,6 @@ using std::cout;
 using std::endl;
 using std::string;
 
-
 constexpr auto REV_BUF_SIZE = 512;
 constexpr auto SEND_BUF_SIZE = 512;
 
@@ -21,62 +20,81 @@ int recvn(const SOCKET& socket, char* recvBuf, int fixedLen);
 
 int main(int argc, char* argv[])
 {
-	WSADATA wsaData{ };
+	WSADATA wsaData{};
 	WSAStartup(MAKEWORD(2, 1), &wsaData);
 
 	// establish socket
-	const auto connSocket = socket(AF_INET, SOCK_STREAM, 0);
-	if (connSocket == INVALID_SOCKET) {
+	const auto listenSocket = socket(AF_INET, SOCK_STREAM, 0);
+	if (listenSocket == INVALID_SOCKET) {
 		cout << "Socket establishes error." << endl;
 		cout << "Error code: " << WSAGetLastError() << endl;
-		return 1;
 	}
 
-	// connect
-	sockaddr_in clientAddress{};
-	clientAddress.sin_family = AF_INET;
-	clientAddress.sin_port = htons(7999);
-	clientAddress.sin_addr.S_un.S_addr = inet_addr("127.0.0.1");
-	if (connect(connSocket, reinterpret_cast<sockaddr*>(&clientAddress), sizeof(clientAddress)) < 0) {
-		cout << "connect error." << endl;
+	// bind port
+	sockaddr_in sevAddr{};
+	sevAddr.sin_family = AF_INET;
+	sevAddr.sin_port = htons(7999);
+	sevAddr.sin_addr.S_un.S_addr = htonl(INADDR_ANY);
+	if (bind(listenSocket, reinterpret_cast<sockaddr*>(&sevAddr), sizeof(sevAddr)) < 0) {
+		cout << "Bind error." << endl;
 		cout << "Error code: " << WSAGetLastError() << endl;
-		return 1;
 	}
 
-	string sendStr;  // 需要发送的字符串
-	char revBuf[REV_BUF_SIZE] = { 0 };  // 接收缓冲区
+	// listen
+	if (listen(listenSocket, SOMAXCONN) < 0) {
+		cout << "Listen error." << endl;
+		cout << "Error code: " << WSAGetLastError() << endl;
+	}
+
+	char revBuf[REV_BUF_SIZE] = { 0 };
 	char sendBuf[SEND_BUF_SIZE] = { 0 };  // 预备的发送缓冲区
-	while (sendStr != "quit") {
-		cout << "Please enter your data: ";
-		std::getline(std::cin, sendStr);
-		char* tSendBuf = sendBuf;  // 真实的发送缓冲区
-		size_t const totalLen = sizeof(size_t) + sendStr.size();  // 需要发送的数据总长度
-		if (totalLen > SEND_BUF_SIZE) {
-			tSendBuf = new char[totalLen];
-		}
-		// 构造发送数据
-		auto const pDataLen = reinterpret_cast<size_t*>(tSendBuf);
-		*pDataLen = sendStr.size();
-		strncpy(tSendBuf + sizeof(size_t), sendStr.c_str(), sendStr.size());
-		// send
-		send(connSocket, tSendBuf, totalLen, 0);
-		if (totalLen > SEND_BUF_SIZE) {
-			delete[] tSendBuf;
-		}
-		// recv
-		char* pRevData = recvVarLen(connSocket, revBuf);
-		if (pRevData == nullptr) {
+
+	while (true) {
+		// accept
+		const auto sevSock = accept(listenSocket, nullptr, nullptr);
+		if (sevSock == INVALID_SOCKET) {
+			cout << "accept error" << endl;
+			cout << "Error code: " << WSAGetLastError() << endl;
 			return 1;
 		}
-		cout << "Receive data: " << pRevData << endl;
-		if (pRevData != revBuf) {
-			delete[] pRevData;
-		}
+		cout << "accept a connection." << endl;
+		// recv data
+		char* pRevData = nullptr;
+		do {
+			pRevData = recvVarLen(sevSock, revBuf);
+			if (pRevData == nullptr) {
+				break;
+			}
+			cout << "Receive data: " << pRevData << endl;
+			// 构造发送数据
+			char* tSendBuf = sendBuf;  // 真实的发送缓冲区
+			auto const dataLen = strlen(pRevData);
+			size_t const totalLen = sizeof(size_t) + dataLen;  // 需要发送的数据总长度
+			if (totalLen > SEND_BUF_SIZE) {
+				tSendBuf = new char[totalLen];
+			}
+			
+			auto const pDataLen = reinterpret_cast<size_t*>(tSendBuf);
+			*pDataLen = dataLen;
+			strncpy(tSendBuf + sizeof(size_t), pRevData, dataLen);
+			// send
+			send(sevSock, tSendBuf, totalLen, 0);
+			if (totalLen > SEND_BUF_SIZE) {
+				delete[] tSendBuf;
+			}
+			if (pRevData != revBuf) {
+				delete[] pRevData;
+			}
+		} while (true);
+
+		shutdown(sevSock, SD_SEND);
+		closesocket(sevSock);
+		cout << "close a server socket." << endl;
 	}
 
-	shutdown(connSocket, 2);
-	closesocket(connSocket);
-	cout << "socket close." << endl;
+	shutdown(listenSocket, 2);
+	closesocket(listenSocket);
+	cout << "close listen socket." << endl;
 
 	WSACleanup();
 	return 0;
@@ -96,7 +114,7 @@ char* recvVarLen(const SOCKET& socket, char* recvBuf)
 		recvBuf = new char[dataLen + 1];
 		hasNewBuf = true;
 	}
-	
+
 	revRet = recvn(socket, recvBuf, dataLen);
 	if (revRet < dataLen) {
 		if (hasNewBuf)
