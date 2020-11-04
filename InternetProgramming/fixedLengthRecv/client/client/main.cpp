@@ -1,5 +1,5 @@
 #include <iostream>
-#define _WINSOCK_DEPRECATED_NO_WARNINGS 1
+#define _WINSOCK_DEPRECATED_NO_WARNINGS
 #include <WinSock2.h>
 #include <string>
 
@@ -17,7 +17,6 @@ int recvn(const SOCKET& socket, char* recvBuf, int fixedLen);
 
 int main(int argc, char* argv[])
 {
-	char revBuf[FIXED_READ_LENGTH + 1] = { 0 };
 	WSADATA wsaData{};
 	WSAStartup(MAKEWORD(2, 1), &wsaData);
 
@@ -41,7 +40,8 @@ int main(int argc, char* argv[])
 	}
 
 	// 请求用户输入发送数据
-	string sendStr;
+	string sendStr;  // 需要发送的字符串
+	char revBuf[FIXED_READ_LENGTH + 1] = { 0 };  // 接收缓冲区
 	while (sendStr != "quit") {
 		cout << "Please enter your data: " << endl;
 		std::getline(std::cin, sendStr);
@@ -55,7 +55,8 @@ int main(int argc, char* argv[])
 		// 发送定长数据
 		send(connSocket, sendStr.c_str(), FIXED_READ_LENGTH, 0);
 		// 接收定长数据
-		
+		const auto revRet = recvn(connSocket, revBuf, FIXED_READ_LENGTH);
+		revBuf[revRet] = '\0';
 		cout << "Receive data: " << revBuf << endl;
 	}
 
