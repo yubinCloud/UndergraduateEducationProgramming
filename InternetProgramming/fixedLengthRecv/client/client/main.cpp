@@ -76,7 +76,7 @@ int recvn(const SOCKET& socket, char* recvBuf, const int fixedLen)
 		const auto revRet = recv(socket, recvBuf, FIXED_READ_LENGTH, 0);
 		if (revRet < 0) {
 			cout << "Error occur when receiving data: " << WSAGetLastError() << endl;
-			return 1;
+			return -1;
 		}
 		if (revRet == 0) {
 			// 对方关闭了连接
