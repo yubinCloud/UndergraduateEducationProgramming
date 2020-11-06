@@ -20,4 +20,4 @@
 
 + 客户的recv函数需要循环接收。
 
-![ip1](https://raw.githubusercontent.com/yubinCloud/MyImgRepo/master/imgs/ip1.png)
+![image-20201106164142603](https://gitee.com/yubinCloud/my-imgs-repo/raw/main/img/image-20201106164142603.png)
