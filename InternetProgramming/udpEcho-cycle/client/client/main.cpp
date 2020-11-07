@@ -60,9 +60,11 @@ int main(int argc, char* argv[])
 		}
 		cout << "Bytes sent: " << iRet << endl;
 		// recv
-		iRet = recvfrom(connSocket, revBuf, REV_BUF_SIZE, 0, nullptr, nullptr);
+		iRet = recvfrom(connSocket, revBuf, REV_BUF_SIZE - 1, 0, nullptr, nullptr);
 		if (iRet > 0) {
 			cout << "Bytes received: " << iRet << endl;
+			revBuf[iRet] = '\0';
+			cout << "Receive data: " << revBuf << endl;
 		}
 		else if (iRet == 0) {
 			cout << "Connection closed." << endl;
@@ -70,7 +72,7 @@ int main(int argc, char* argv[])
 		else {
 			cout << "recv failed with error: " << WSAGetLastError();
 		}
-		if (sendStr == "quit")
+		if (sendStr == "q")
 			break;
 	}
 	freeaddrinfo(pAddrInfo);

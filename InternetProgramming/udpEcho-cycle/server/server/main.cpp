@@ -59,6 +59,7 @@ int main(int argc, char* argv[])
 
 	cout << "UDP server starting..." << endl;
 	char* revBuf = new char[REV_BUF_SIZE];
+	const string ECHO_PREFIX = string("echo: ");
 	while (true) {
 		sockaddr_in clientSocket{};
 		int clientSocketLen = sizeof(clientSocket);
@@ -68,7 +69,8 @@ int main(int argc, char* argv[])
 			revBuf[iRet] = '\0';
 			cout << "Bytes received: " << iRet << endl;
 			cout << "Data received: " << revBuf << endl;
-			auto const sendRet = sendto(sevSocket, revBuf, iRet, 0, reinterpret_cast<sockaddr*>(&clientSocket), clientSocketLen);
+			string sendStr = ECHO_PREFIX + revBuf;
+			auto const sendRet = sendto(sevSocket, sendStr.c_str(), sendStr.size() + 1, 0, reinterpret_cast<sockaddr*>(&clientSocket), clientSocketLen);
 			if (sendRet == SOCKET_ERROR) {
 				cout << "send failed with error: " << WSAGetLastError() << endl;
 				closesocket(sevSocket);
