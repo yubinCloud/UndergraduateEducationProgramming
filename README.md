@@ -7,6 +7,7 @@
 |       number theory        |             数论              |      |
 |     numerical analysis     |           数值分析            |      |
 | AlgorithmDesignAndAnalysis |        算法设计与分析         |      |
+|OS|操作系统||
 
 
 
