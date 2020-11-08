@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="JAVA_MODULE" version="4">
-  <component name="NewModuleRootManager" inherit-compiler-output="true">
-    <exclude-output />
+  <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/OS/exp4-banker" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/InternetProgramming/variableLengthRecv/client/client/Debug" />
       <excludeFolder url="file://$MODULE_DIR$/InternetProgramming/variableLengthRecv/server/server/Debug" />
     </content>
-    <orderEntry type="inheritedJdk" />
+    <orderEntry type="jdk" jdkName="Anaconda Python 3.8 (base)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>
