@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2047cddf-ece7-41ec-96fa-92004ab99c07" name="Default Changelist" comment="finish exp2">
+      <change afterPath="$PROJECT_DIR$/../exp4-banker/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../InterProcess Communication/shared_memory/readEnd/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../InterProcess Communication/shared_memory/readEnd/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../InterProcess Communication/shared_memory/readEnd/cmake-build-debug/CMakeFiles/3.16.5/CMakeCCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../InterProcess Communication/shared_memory/readEnd/cmake-build-debug/CMakeFiles/3.16.5/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../InterProcess Communication/shared_memory/readEnd/cmake-build-debug/CMakeFiles/3.16.5/CMakeRCCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../InterProcess Communication/shared_memory/readEnd/cmake-build-debug/CMakeFiles/3.16.5/CMakeSystem.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../InterProcess Communication/shared_memory/readEnd/cmake-build-debug/CMakeFiles/3.16.5/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../InterProcess Communication/shared_memory/readEnd/cmake-build-debug/CMakeFiles/3.16.5/CompilerIdC/a.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../InterProcess Communication/shared_memory/readEnd/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../InterProcess Communication/shared_memory/readEnd/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../InterProcess Communication/shared_memory/readEnd/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../InterProcess Communication/shared_memory/readEnd/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../InterProcess Communication/shared_memory/readEnd/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/../InterProcess Communication/shared_memory/readEnd/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../InterProcess Communication/shared_memory/readEnd/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../InterProcess Communication/shared_memory/readEnd/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../InterProcess Communication/shared_memory/readEnd/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../InterProcess Communication/shared_memory/readEnd/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../InterProcess Communication/shared_memory/readEnd/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../InterProcess Communication/shared_memory/readEnd/cmake-build-debug/CMakeFiles/cmake.check_cache" beforeDir="false" afterPath="$PROJECT_DIR$/../InterProcess Communication/shared_memory/readEnd/cmake-build-debug/CMakeFiles/cmake.check_cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../InterProcess Communication/shared_memory/readEnd/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/../InterProcess Communication/shared_memory/readEnd/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../InterProcess Communication/shared_memory/readEnd/cmake-build-debug/CMakeFiles/readEnd.dir/C.includecache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../InterProcess Communication/shared_memory/readEnd/cmake-build-debug/CMakeFiles/readEnd.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../InterProcess Communication/shared_memory/readEnd/cmake-build-debug/CMakeFiles/readEnd.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../InterProcess Communication/shared_memory/readEnd/cmake-build-debug/CMakeFiles/readEnd.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/../InterProcess Communication/shared_memory/readEnd/cmake-build-debug/CMakeFiles/readEnd.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../InterProcess Communication/shared_memory/readEnd/cmake-build-debug/CMakeFiles/readEnd.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../InterProcess Communication/shared_memory/readEnd/cmake-build-debug/CMakeFiles/readEnd.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../InterProcess Communication/shared_memory/readEnd/cmake-build-debug/CMakeFiles/readEnd.dir/depend.internal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../InterProcess Communication/shared_memory/readEnd/cmake-build-debug/CMakeFiles/readEnd.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/../InterProcess Communication/shared_memory/readEnd/cmake-build-debug/CMakeFiles/readEnd.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../InterProcess Communication/shared_memory/readEnd/cmake-build-debug/CMakeFiles/readEnd.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/../InterProcess Communication/shared_memory/readEnd/cmake-build-debug/CMakeFiles/readEnd.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../InterProcess Communication/shared_memory/readEnd/cmake-build-debug/CMakeFiles/readEnd.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../InterProcess Communication/shared_memory/readEnd/cmake-build-debug/CMakeFiles/readEnd.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../InterProcess Communication/shared_memory/readEnd/cmake-build-debug/CMakeFiles/readEnd.dir/main.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../InterProcess Communication/shared_memory/readEnd/cmake-build-debug/CMakeFiles/readEnd.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/../InterProcess Communication/shared_memory/readEnd/cmake-build-debug/CMakeFiles/readEnd.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../InterProcess Communication/shared_memory/readEnd/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../InterProcess Communication/shared_memory/readEnd/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../InterProcess Communication/shared_memory/readEnd/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../InterProcess Communication/shared_memory/readEnd/cmake-build-debug/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../InterProcess Communication/shared_memory/readEnd/cmake-build-debug/readEnd.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/../InterProcess Communication/shared_memory/readEnd/cmake-build-debug/readEnd.cbp" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="G:\ToolBox\apps\IDEA-U\ch-0\202.6397.94\plugins\maven\lib\maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1jSeUdFHfoLnNCIX2eGDMYY0mYP" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../UndergraduateEducationProgramming" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Shell" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Shell" />
+      <module name="Exp2-procSchedule" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Shell" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2047cddf-ece7-41ec-96fa-92004ab99c07" name="Default Changelist" comment="" />
+      <created>1603801937516</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1603801937516</updated>
+      <workItem from="1603801938555" duration="4225000" />
+      <workItem from="1603808102186" duration="5799000" />
+      <workItem from="1603872620912" duration="319000" />
+      <workItem from="1603888821565" duration="7391000" />
+      <workItem from="1603955975636" duration="8209000" />
+      <workItem from="1603981524616" duration="5527000" />
+      <workItem from="1604032427862" duration="3905000" />
+      <workItem from="1604055242645" duration="1177000" />
+      <workItem from="1604058330510" duration="141000" />
+      <workItem from="1604220760238" duration="646000" />
+      <workItem from="1604492998046" duration="9000" />
+    </task>
+    <task id="LOCAL-00001" summary="finish exp2">
+      <created>1604055351770</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1604055351770</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="finish exp2" />
+    <option name="LAST_COMMIT_MESSAGE" value="finish exp2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="249" y="0" key="#Project_Structure" timestamp="1603801944467">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="249" y="0" key="#Project_Structure/0.0.1536.834@0.0.1536.834" timestamp="1603801944467" />
+    <state x="574" y="133" key="#com.intellij.ide.util.MemberChooser" timestamp="1604035704166">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="-1202" y="167" key="#com.intellij.ide.util.MemberChooser/0.0.1536.834/-1920.0.1920.1050@-1920.0.1920.1050" timestamp="1603893124327" />
+    <state x="574" y="133" key="#com.intellij.ide.util.MemberChooser/0.0.1536.834@0.0.1536.834" timestamp="1604035704166" />
+    <state x="319" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1603809113091">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="319" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.834@0.0.1536.834" timestamp="1603809113091" />
+    <state x="549" y="172" key="FileChooserDialogImpl" timestamp="1604493005153">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="549" y="172" key="FileChooserDialogImpl/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1604493005153" />
+    <state width="1492" height="139" key="GridCell.Tab.0.bottom" timestamp="1604056456082">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1492" height="139" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1604056456082" />
+    <state width="1492" height="139" key="GridCell.Tab.0.center" timestamp="1604056456081">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1492" height="139" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1604056456081" />
+    <state width="1492" height="139" key="GridCell.Tab.0.left" timestamp="1604056456081">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1492" height="139" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1604056456081" />
+    <state width="1492" height="139" key="GridCell.Tab.0.right" timestamp="1604056456081">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1492" height="139" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1604056456081" />
+    <state width="1492" height="219" key="GridCell.Tab.1.bottom" timestamp="1603987056135">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1492" height="219" key="GridCell.Tab.1.bottom/0.0.1536.834@0.0.1536.834" timestamp="1603987056135" />
+    <state width="1492" height="219" key="GridCell.Tab.1.center" timestamp="1603987056135">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1492" height="219" key="GridCell.Tab.1.center/0.0.1536.834@0.0.1536.834" timestamp="1603987056135" />
+    <state width="1492" height="219" key="GridCell.Tab.1.left" timestamp="1603987056135">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1492" height="219" key="GridCell.Tab.1.left/0.0.1536.834@0.0.1536.834" timestamp="1603987056135" />
+    <state width="1492" height="219" key="GridCell.Tab.1.right" timestamp="1603987056135">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1492" height="219" key="GridCell.Tab.1.right/0.0.1536.834@0.0.1536.834" timestamp="1603987056135" />
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1604055356931">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1604055356931" />
+    <state x="498" y="180" width="672" height="539" key="search.everywhere.popup" timestamp="1603985450230">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="-1297" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1536.834/-1920.0.1920.1050@-1920.0.1920.1050" timestamp="1603895995921" />
+    <state x="498" y="180" width="672" height="539" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1603985450230" />
+  </component>
+</project>

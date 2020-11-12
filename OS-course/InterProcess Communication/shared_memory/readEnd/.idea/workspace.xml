@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="readEnd" targetName="readEnd" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f4b417fd-b3f1-4854-9f5b-640b8b05f527" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectId" id="1idwrVG2xjRqk2xHk5QDwZtJpv4" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="cf.first.check.clang-format" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../writeEnd" />
+  </component>
+  <component name="RunManager">
+    <configuration name="readEnd" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="readEnd" TARGET_NAME="readEnd" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="readEnd" RUN_TARGET_NAME="readEnd">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f4b417fd-b3f1-4854-9f5b-640b8b05f527" name="Default Changelist" comment="" />
+      <created>1602250975151</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1602250975151</updated>
+      <workItem from="1602250976729" duration="873000" />
+      <workItem from="1602299344685" duration="524000" />
+      <workItem from="1602328801860" duration="334000" />
+    </task>
+    <task id="LOCAL-00001" summary="init shared_memory readEnd project">
+      <created>1602251018115</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1602251018115</updated>
+    </task>
+    <task id="LOCAL-00002" summary="finish shared_memory readEnd.">
+      <created>1602251388462</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1602251388462</updated>
+    </task>
+    <task id="LOCAL-00003" summary="修改了key使其固定为1234">
+      <created>1602329096278</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1602329096278</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="init shared_memory readEnd project" />
+    <MESSAGE value="finish shared_memory readEnd." />
+    <MESSAGE value="修改了key使其固定为1234" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改了key使其固定为1234" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="307" y="0" key="CommitChangelistDialog2" timestamp="1602329095184">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="307" y="0" key="CommitChangelistDialog2/0.0.1536.834/-1920.0.1920.1050@0.0.1536.834" timestamp="1602329095184" />
+    <state x="307" y="0" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1602251387577" />
+    <state x="549" y="172" key="FileChooserDialogImpl" timestamp="1602299392034">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="549" y="172" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1602299392034" />
+    <state width="1493" height="213" key="GridCell.Tab.0.bottom" timestamp="1602299868919">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1493" height="213" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1602299868919" />
+    <state width="1493" height="213" key="GridCell.Tab.0.center" timestamp="1602299868919">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1493" height="213" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1602299868919" />
+    <state width="1493" height="213" key="GridCell.Tab.0.left" timestamp="1602299868919">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1493" height="213" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1602299868919" />
+    <state width="1493" height="213" key="GridCell.Tab.0.right" timestamp="1602299868919">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1493" height="213" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1602299868919" />
+  </component>
+</project>
