@@ -155,11 +155,11 @@ public class ProcessScheduler {
      * @return 所创建的新进程的PCB
      */
     public PCB createProcess(String procName, int priority) {
-        PCB newProc = new PCB(procName, priority, readyQueues.get(priority), runningProcess);
-        newProc.readyQueue.add(newProc);
-        pcbs.add(newProc);
-        pidToPcb.put(newProc.getPid(), newProc);
-        scheduleProc();
+        PCB newProc = new PCB(procName, priority, readyQueues.get(priority), runningProcess);  // 创建新PCB
+        newProc.readyQueue.add(newProc);  // 加入相应的优先级队列中
+        pcbs.add(newProc);  // 使该进程被调度器统一管理
+        pidToPcb.put(newProc.getPid(), newProc);  // 实现由pid -> proc 的映射
+        scheduleProc();  // 调度器进行一次调度
         return newProc;
     }
 

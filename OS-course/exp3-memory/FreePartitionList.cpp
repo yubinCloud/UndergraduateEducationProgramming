@@ -261,8 +261,8 @@ PartitionAllocateStrategy::worstFitStrategy(const int requestSize, list<Partitio
             ++curSerialNum;
             p->serialNum = curSerialNum;
         }
-        return unique_ptr<PartitionItem>(
-                new PartitionItem(0, maxFreePartition->partitionSize, maxFreePartition->beginAddr, false)
+        return std::make_unique<PartitionItem>(
+                0, maxFreePartition->partitionSize, maxFreePartition->beginAddr, false
         );
     }
 }

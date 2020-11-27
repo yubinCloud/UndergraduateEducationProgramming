@@ -12,23 +12,23 @@ import resource_req as rq
 
 # 初始化可利用资源向量
 available = np.array(
-    [3, 3, 2]
+    [1, 5, 2, 0]
 )
 # 初始化最大需求矩阵
 max_need = np.array(
-    [[7, 5, 3],
-     [3, 2, 2],
-     [9, 0, 2],
-     [2, 2, 2],
-     [4, 3, 3]]
+    [[0, 0, 1, 2],
+     [1, 7, 5, 0],
+     [2, 3, 5, 6],
+     [0, 6, 5, 2],
+     [0, 6, 5, 6]]
 )
 # 初始化分配矩阵
 allocation = np.array(
-    [[0, 1, 0],
-     [2, 0, 0],
-     [3, 0, 2],
-     [2, 1, 1],
-     [0, 0, 2]]
+    [[0, 0, 1, 2],
+     [1, 0, 0, 0],
+     [1, 3, 5, 4],
+     [0, 6, 3, 2],
+     [0, 0, 1, 4]]
 )
 # 求出需求矩阵
 need = max_need - allocation
@@ -50,7 +50,7 @@ def banker(request: rq.BaseResourceRequest, avail: np.ndarray,
     i = request.proc
     # 检测所需要的资源是否超出它所宣布的最大值
     if np.any(np.less(need[i], request.nums)):
-        raise ValueError("所需要的资源超出它所宣布的最大值")
+        return  "所需要的资源超出它所宣布的最大值"
 
     if np.any(np.less(avail, request.nums)):
         return f"尚无足够资源，进程{request.proc}需要等待", []
